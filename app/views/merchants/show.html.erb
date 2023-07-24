@@ -1,0 +1,9 @@
+<h1> <%= @merchant.name %> Show Page </h1>
+
+<section id="items-list">
+  <ul>
+    <% @items.each do |i| %>
+      <li><%= i.name %></li><br>
+    <% end %>
+  </ul>  
+</section>

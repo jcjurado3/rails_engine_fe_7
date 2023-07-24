@@ -1,0 +1,8 @@
+<h3>List of Merchants</h3>
+<section id="merchants">
+  <% @merchants.each do |m| %>
+    <ul>
+      <li><%= link_to m.name, merchant_path(m.id), method: :get %></li>
+    </ul>
+  <% end %>
+</section>
